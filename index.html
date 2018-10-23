@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>実績マップ | 豊島区議会議員 木下ひろし</title>
+    <meta name="description" content="豊島区議会議員・木下ひろしの実績マップ。道路整備や防災対策の設置など、区民の声からできた実績です。">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7/dist/leaflet.css" />
+    <link rel="stylesheet" href="map_sample.css" />
+    <link rel="stylesheet" href="slide_in.css" />
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-97988312-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+
+<body>
+    <input type="checkbox" name="toggle" id="toggle" checked=false/>
+
+    <h3>豊島区議会議員・木下ひろし 実績マップ</h3>
+    <div id="map"></div>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://unpkg.com/leaflet@0.7/dist/leaflet.js"></script>
+
+    <script src="map_sample.js"></script>
+
+    <div id="return">
+        <p id="back">
+            <a href="http://hiroshi-kinoshita.com/">木下ひろし公式サイト</a>
+        </p>
+    </div>
+    <div id="button">
+        <input id="current_loc" type="button" value="現在地" onclick="setCenter();" /><br />
+    </div>
+
+    <div class="footer">
+        <p> © 2018 木下ひろし All rights reserved</p>
+    </div>
+
+    <script type="text/javascript">
+        // <![CDATA[
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-97988312-1', 'auto');
+        ga('send', 'pageview');
+        // ]]>
+    </script>
+
+</body>
+
+</html>
